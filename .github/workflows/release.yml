@@ -28,10 +28,10 @@ jobs:
             version: darwin-amd64
 
     runs-on: ${{ matrix.os }}
-
+# we need to clone progrock so we can install locally for clj-holmes
     steps:
       - uses: actions/checkout@v2
-
+# pull down progrock
       - name: Prepare java
         uses: actions/setup-java@v2
         with:
@@ -43,6 +43,9 @@ jobs:
         with:
           lein: latest
 
+# run lein deps, clean, uberjar, then install.
+
+# checkout local clj-holmes and continue with the below
       - name: Setup Graalvm
         uses: DeLaGuardo/setup-graalvm@master
         id: setup-graalvm
