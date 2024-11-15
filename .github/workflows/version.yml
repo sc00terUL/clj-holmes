@@ -1,9 +1,10 @@
 name: Update VERSION.md file
-on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'project.clj'
+on: 
+  workflow_dispatch:
+#  push:
+#    branches: [ main ]
+#    paths:
+#      - 'project.clj'
 
 jobs:
   update-version-file:
