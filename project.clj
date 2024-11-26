@@ -33,7 +33,7 @@
                  [org.martinklepsch/clj-http-lite "0.4.3"]
                  [clj-commons/clj-yaml "0.7.107" :exclusions [org.flatland/ordered]]
                  [org.flatland/ordered "1.15.10"]
-                 [progrock "0.1.2"]
+                 [progrock "0.1.3"]
                  [org.clojars.clj-holmes/shape-shifter "0.3.6"]
                  [borkdude/edamame "0.0.15"]]
             
